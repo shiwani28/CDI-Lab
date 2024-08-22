@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<w3s:root xmlns:w3s="http://www.w3schools.com">
+  <!--Zero or more repetitions:-->
+  <w3s:Emp_Details EmpAttribute="string">
+    <w3s:employee>
+      <w3s:Employeeid>1</w3s:Employeeid>
+      <w3s:Name>
+        <w3s:Firstname>Arjun</w3s:Firstname>
+        <w3s:Lastname>Reddy</w3s:Lastname>
+      </w3s:Name>
+      <!--1 or more repetitions:-->
+      <w3s:Dependents>anyType</w3s:Dependents>
+    </w3s:employee>
+    <!--Optional:-->
+    <w3s:address>
+      <w3s:Addressid>2</w3s:Addressid>
+      <w3s:Employeeid>1</w3s:Employeeid>
+      <w3s:Line1>Bagmane Tech Park</w3s:Line1>
+      <w3s:Line2>CV Raman Nagar</w3s:Line2>
+      <w3s:City>Bangalore</w3s:City>
+      <w3s:State>KA</w3s:State>
+      <w3s:Zipcode>560029</w3s:Zipcode>
+      <w3s:Fromdate>2008-09-29</w3s:Fromdate>
+    </w3s:address>
+  </w3s:Emp_Details>
+  <w3s:Emp_Details EmpAttribute="string">
+    <w3s:employee>
+      <w3s:Employeeid>2</w3s:Employeeid>
+      <w3s:Name>
+        <w3s:Firstname>Ankit</w3s:Firstname>
+        <w3s:Lastname>Tiwari</w3s:Lastname>
+      </w3s:Name>
+      <!--1 or more repetitions:-->
+      <w3s:Dependents>anyType</w3s:Dependents>
+    </w3s:employee>
+    <!--Optional:-->
+    <w3s:address>
+      <w3s:Addressid>2</w3s:Addressid>
+      <w3s:Employeeid>1</w3s:Employeeid>
+      <w3s:Line1>22nd Main Road</w3s:Line1>
+      <w3s:Line2>HSR Layour</w3s:Line2>
+      <w3s:City>Bangalore</w3s:City>
+      <w3s:State>KA</w3s:State>
+      <w3s:Zipcode>560102</w3s:Zipcode>
+      <w3s:Fromdate>2008-09-29</w3s:Fromdate>
+    </w3s:address>
+  </w3s:Emp_Details>
+</w3s:root>
