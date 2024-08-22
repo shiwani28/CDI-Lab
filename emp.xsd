@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com" xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Emp_Details" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="employee">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Employeeid" type="xs:short"/>
+											<xs:element name="Name">
+												<xs:complexType>
+												<xs:sequence>
+												<xs:element name="Firstname" type="xs:string"/>
+												<xs:element name="Lastname" type="xs:string"/>
+												</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										<xs:element name="Dependents" minOccurs="1" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="address" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Addressid" type="xs:byte"/>
+										<xs:element name="Employeeid" type="xs:short"/>
+										<xs:element name="Line1" type="xs:string"/>
+										<xs:element name="Line2" type="xs:string"/>
+										<xs:element name="City" type="xs:string"/>
+										<xs:element name="State" type="xs:string"/>
+										<xs:element name="Zipcode" type="xs:int"/>
+										<xs:element name="Fromdate" type="xs:date"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="EmpAttribute" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
